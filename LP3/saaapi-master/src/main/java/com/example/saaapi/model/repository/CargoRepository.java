@@ -1,4 +1,9 @@
-package com.example.saaapi.model.repository;
+package com.example.saaapi.repository;
 
-public class CargoRepository {
+import com.example.saaapi.model.entity.Cargo;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CargoRepository extends JpaRepository<Cargo, Long> {
 }
